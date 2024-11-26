@@ -8,6 +8,15 @@ export default {
       'neue-machina': ['NeueMachina', 'sans-serif']
     },
   	extend: {
+		animation: {
+			rotate: 'rotate 4s linear infinite',
+		  },
+		  keyframes: {
+			rotate: {
+			  '0%': { transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0deg)' },
+			  '100%': { transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(360deg)' },
+			},
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
